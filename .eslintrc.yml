@@ -5,7 +5,7 @@ env:
 root: true
 
 extends:
-  - 'airbnb-base'
+  - "airbnb-base"
 
 parserOptions:
   ecmaVersion: 11
