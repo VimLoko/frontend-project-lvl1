@@ -2,6 +2,8 @@ env:
   node: true
   es2020: true
 
+root: true
+
 extends:
   - 'airbnb-base'
 
