@@ -18,6 +18,7 @@ const calc = (firstOperand, secondOperand, operation) => {
   }
   return result;
 };
+const description = 'What is the result of the expression?';
 
 const gameInCalc = () => {
   const firstOperand = randomDigit(1, 10);
@@ -29,4 +30,4 @@ const gameInCalc = () => {
   };
 };
 
-export default () => gameEngine(gameInCalc);
+export default () => gameEngine(gameInCalc, description);

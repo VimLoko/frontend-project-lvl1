@@ -2,14 +2,16 @@ import gameEngine from '../index.js';
 import randomDigit from '../libs/random.js';
 
 const isEvenDigit = (digit) => (digit % 2 ? 'yes' : 'no');
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const gameInEven = () => {
   const randDigit = randomDigit(1, 100);
   const resultRandEven = isEvenDigit(randDigit);
   return {
+    description: 'What is the result of the expression?',
     question: randDigit,
     answer: resultRandEven,
   };
 };
 
-export default () => gameEngine(gameInEven);
+export default () => gameEngine(gameInEven, description);
