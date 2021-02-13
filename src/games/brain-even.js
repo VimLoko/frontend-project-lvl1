@@ -8,7 +8,6 @@ const gameInEven = () => {
   const randDigit = randomDigit(1, 100);
   const resultRandEven = isEvenDigit(randDigit);
   return {
-    description: 'What is the result of the expression?',
     question: randDigit,
     answer: resultRandEven,
   };
