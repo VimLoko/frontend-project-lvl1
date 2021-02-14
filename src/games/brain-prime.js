@@ -2,6 +2,9 @@ import gameEngine from '../index.js';
 import randomDigit from '../libs/random.js';
 
 const isPrime = (digit) => {
+  if (digit === 1) {
+    return 'no';
+  }
   let count = 0;
   for (let i = 1; i <= digit; i += 1) {
     if (digit % i === 0) {
